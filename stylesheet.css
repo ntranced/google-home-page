@@ -7,12 +7,14 @@ body {
 
 #header-bar {
     font-size: small;
-    width:100%;
     position: fixed;
     top: 0%;
     display:flex;
     justify-content: space-between;
     padding: 25px 20px 0px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 800px;
 }
 
 #header-right {
@@ -87,7 +89,7 @@ img {
     width:100%;
     position:fixed;
     bottom:0%;
-
+    min-width: 800px;
 }
 
 #footer-row-1, #footer-row-2 {
@@ -96,6 +98,8 @@ img {
     border-color:#CCCCCC;
     padding: 10px 15px 10px 15px;
     height: 20px;
+    box-sizing: border-box;
+
 }
 
 #footer-row-1 {
@@ -112,13 +116,12 @@ img {
 }
 
 #footer-business {
-    width: 300px;
+    display: flex;
 }
 
 #footer-about {
     display: flex;
     justify-content: flex-end;
-    width: 300px;
 }
 
 .left-aligned-item {
